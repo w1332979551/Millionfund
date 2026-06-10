@@ -1,0 +1,103 @@
+// 基金数据库 - 包含模拟基金数据
+const fundDatabase = [
+    {
+        code: '000001',
+        name: '易方达消费行业',
+        currentPrice: 2.8456,
+        previousPrice: 2.8234,
+        avgPrice: 2.5,
+        highPrice52w: 3.2,
+        lowPrice52w: 2.1,
+        dayChange: 0.79,
+        weekChange: 2.45,
+        monthChange: -1.23,
+        yearChange: 8.56,
+        volume: '125万',
+        amount: '3.5亿',
+        scale: '150亿',
+        description: '主要投资于消费行业优质上市公司',
+        manager: '陈晖',
+        riskLevel: '中风险'
+    },
+    {
+        code: '519674',
+        name: '银河创新成长',
+        currentPrice: 1.9234,
+        previousPrice: 1.8956,
+        avgPrice: 1.7,
+        highPrice52w: 2.4,
+        lowPrice52w: 1.5,
+        dayChange: 1.47,
+        weekChange: 1.89,
+        monthChange: 2.34,
+        yearChange: 12.45,
+        volume: '89万',
+        amount: '1.8亿',
+        scale: '85亿',
+        description: '精选具有创新能力的成长型企业',
+        manager: '李晋',
+        riskLevel: '中高风险'
+    },
+    {
+        code: '163402',
+        name: '兴全趋势投资',
+        currentPrice: 3.1567,
+        previousPrice: 3.1234,
+        avgPrice: 2.8,
+        highPrice52w: 3.8,
+        lowPrice52w: 2.3,
+        dayChange: 0.11,
+        weekChange: -0.54,
+        monthChange: 3.12,
+        yearChange: 15.67,
+        volume: '156万',
+        amount: '5.2亿',
+        scale: '200亿',
+        description: '把握经济增长的长期趋势',
+        manager: '谢志宇',
+        riskLevel: '中风险'
+    },
+    {
+        code: '110022',
+        name: '易方达消费精选',
+        currentPrice: 4.2134,
+        previousPrice: 4.1890,
+        avgPrice: 3.5,
+        highPrice52w: 4.8,
+        lowPrice52w: 3.1,
+        dayChange: 0.58,
+        weekChange: 1.23,
+        monthChange: -2.15,
+        yearChange: 10.34,
+        volume: '234万',
+        amount: '9.8亿',
+        scale: '280亿',
+        description: '精选消费龙头企业投资',
+        manager: '陈晖',
+        riskLevel: '中风险'
+    },
+    {
+        code: '420018',
+        name: '兴全稳健投资',
+        currentPrice: 1.5678,
+        previousPrice: 1.5534,
+        avgPrice: 1.4,
+        highPrice52w: 1.9,
+        lowPrice52w: 1.2,
+        dayChange: 0.93,
+        weekChange: 0.67,
+        monthChange: 1.45,
+        yearChange: 5.23,
+        volume: '67万',
+        amount: '1.2亿',
+        scale: '45亿',
+        description: '稳健增长投资策略基金',
+        manager: '谢志宇',
+        riskLevel: '低风险'
+    }
+];
+
+// 导出数据库
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { fundDatabase };
+}
