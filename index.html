@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="logo">
                     <h1>💰 Millionfund</h1>
-                    <p class="tagline">基金估值查询 | 涨跌预测 | 支撑位压力位计算</p>
+                    <p class="tagline">基金估值查询 | 涨跌预测 | 支撑位压力位计算 | 实时数据源</p>
                 </div>
             </div>
         </header>
@@ -38,6 +38,14 @@
                 </div>
             </section>
 
+            <!-- API Status -->
+            <section style="background: #f0f9ff; border-left: 4px solid #667eea; padding: 15px; border-radius: 8px; margin-bottom: 30px;">
+                <p style="margin: 0; color: #333; font-size: 0.9em;">
+                    🌐 <strong>数据源：</strong> 天天基金 API | 新浪财经 API | 腾讯行情 API<br>
+                    📊 <strong>说明：</strong> 应用现已集成多源实时数据接口，可查询数万支基金，完整的涨跌预测和支撑位压力位计算。
+                </p>
+            </section>
+
             <!-- Favorites Section -->
             <section class="favorites-section">
                 <h2>⭐ 我的收藏</h2>
@@ -50,7 +58,7 @@
             <section class="results-section">
                 <div id="resultsList" class="results-list">
                     <div class="empty-state">
-                        <p>📊 输入基金代码开始查询</p>
+                        <p>📊 输入基金代码开始查询<br><span style="font-size: 0.9em; color: #999;">支持查询所有真实基金代码</span></p>
                     </div>
                 </div>
             </section>
@@ -81,11 +89,12 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>© 2026 Millionfund - 基金估值查询系统 | 数据仅供参考</p>
+            <p>© 2026 Millionfund - 基金估值查询系统 | 数据仅供参考 | 已集成天天基金、新浪财经、腾讯行情 API</p>
         </footer>
     </div>
 
     <script src="data.js"></script>
+    <script src="api.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
