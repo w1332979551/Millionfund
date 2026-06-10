@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millionfund - 基金估值查询系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>💰 Millionfund</h1>
+                    <p class="tagline">基金估值查询 | 涨跌预测 | 支撑位压力位计算</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="输入基金代码或名称 (例如: 000001)"
+                        class="search-input"
+                    >
+                    <button id="searchBtn" class="search-btn">🔍 查询</button>
+                </div>
+                <div class="quick-links">
+                    <button class="quick-btn" data-code="000001">000001 易方达消费</button>
+                    <button class="quick-btn" data-code="519674">519674 银河创新</button>
+                    <button class="quick-btn" data-code="163402">163402 兴全趋势投资</button>
+                </div>
+            </section>
+
+            <!-- Favorites Section -->
+            <section class="favorites-section">
+                <h2>⭐ 我的收藏</h2>
+                <div id="favoritesList" class="favorites-list">
+                    <p class="empty-msg">暂无收藏，点击查询结果中的 ⭐ 添加</p>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <div id="resultsList" class="results-list">
+                    <div class="empty-state">
+                        <p>📊 输入基金代码开始查询</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analysis Section -->
+            <section class="analysis-section" id="analysisSection" style="display: none;">
+                <h2>📈 基金分析</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-card">
+                        <h3>涨跌分析</h3>
+                        <div id="priceAnalysis" class="analysis-content"></div>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>趋势预测</h3>
+                        <div id="trendForecast" class="analysis-content"></div>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>支撑位/压力位</h3>
+                        <div id="supportResistance" class="analysis-content"></div>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>风险评估</h3>
+                        <div id="riskAssessment" class="analysis-content"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Millionfund - 基金估值查询系统 | 数据仅供参考</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
